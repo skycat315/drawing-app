@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61F9EF12717C8670097A160 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61F9EF02717C8670097A160 /* PaintViewController.swift */; };
 		F63AC83D271410D300B8C295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AC83C271410D300B8C295 /* AppDelegate.swift */; };
 		F63AC83F271410D300B8C295 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AC83E271410D300B8C295 /* SceneDelegate.swift */; };
 		F63AC841271410D300B8C295 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AC840271410D300B8C295 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61F9EF02717C8670097A160 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
 		F63AC839271410D300B8C295 /* Lesson9_PaintApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson9_PaintApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63AC83C271410D300B8C295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F63AC83E271410D300B8C295 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				F63AC83C271410D300B8C295 /* AppDelegate.swift */,
 				F63AC83E271410D300B8C295 /* SceneDelegate.swift */,
 				F63AC840271410D300B8C295 /* ViewController.swift */,
+				F61F9EF02717C8670097A160 /* PaintViewController.swift */,
 				F63AC842271410D300B8C295 /* Main.storyboard */,
 				F63AC845271410D400B8C295 /* Assets.xcassets */,
 				F63AC847271410D400B8C295 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				F63AC841271410D300B8C295 /* ViewController.swift in Sources */,
 				F63AC83D271410D300B8C295 /* AppDelegate.swift in Sources */,
 				F63AC83F271410D300B8C295 /* SceneDelegate.swift in Sources */,
+				F61F9EF12717C8670097A160 /* PaintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
