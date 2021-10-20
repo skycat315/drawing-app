@@ -304,6 +304,7 @@ class PaintViewController: UIViewController {
             lastDrawImage = self.canvas.image
             savedImageArray.remove(at: currentTouchNumber - 1)
         }
+        
         //動作確認用
         print("onClickUndo")
         print(currentTouchNumber)
@@ -313,8 +314,10 @@ class PaintViewController: UIViewController {
     @IBAction func onClickClear(_ sender: Any) {
         //何かが書かれていたら削除して黒板を最初の状態に戻す
         if lastDrawImage != nil {
+            currentTouchNumber += 1
+            savedImageArray.append(self.canvas.image!)
+            self.canvas.image = nil
             lastDrawImage = nil
-            canvas.image = nil
         }
     }
 }
