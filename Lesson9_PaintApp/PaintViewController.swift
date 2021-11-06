@@ -294,15 +294,18 @@ class PaintViewController: UIViewController {
     }
     
     @IBAction func onClickUndo(_ sender: Any) {
-        //currentDrawNumberが1以下の時は白紙の状態に戻す
         if currentTouchNumber <= 1 {
+            //初期状態に戻す
+            currentTouchNumber = 0
             self.canvas.image = nil
             lastDrawImage = nil
+            savedImageArray.removeAll()
         } else {
+            //1つ前の画像に戻す、不要になった画像は削除する
             currentTouchNumber -= 1
             self.canvas.image = savedImageArray[currentTouchNumber - 1]
             lastDrawImage = self.canvas.image
-            savedImageArray.remove(at: currentTouchNumber - 1)
+            savedImageArray.remove(at: currentTouchNumber)
         }
         
         //動作確認用
