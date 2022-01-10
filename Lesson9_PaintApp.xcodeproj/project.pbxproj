@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60AFD45278C478E00E91D98 /* ButtonEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60AFD44278C478E00E91D98 /* ButtonEffect.swift */; };
 		F61F9EF12717C8670097A160 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61F9EF02717C8670097A160 /* PaintViewController.swift */; };
 		F63AC83D271410D300B8C295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AC83C271410D300B8C295 /* AppDelegate.swift */; };
 		F63AC83F271410D300B8C295 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AC83E271410D300B8C295 /* SceneDelegate.swift */; };
@@ -14,9 +15,11 @@
 		F63AC844271410D300B8C295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63AC842271410D300B8C295 /* Main.storyboard */; };
 		F63AC846271410D400B8C295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63AC845271410D400B8C295 /* Assets.xcassets */; };
 		F63AC849271410D400B8C295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63AC847271410D400B8C295 /* LaunchScreen.storyboard */; };
+		F69EEBF9278C4C880099B02A /* saveSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F69EEBF8278C4C880099B02A /* saveSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60AFD44278C478E00E91D98 /* ButtonEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEffect.swift; sourceTree = "<group>"; };
 		F61F9EF02717C8670097A160 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
 		F63AC839271410D300B8C295 /* Lesson9_PaintApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson9_PaintApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63AC83C271410D300B8C295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		F63AC845271410D400B8C295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F63AC848271410D400B8C295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F63AC84A271410D400B8C295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69EEBF8278C4C880099B02A /* saveSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = saveSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				F63AC83C271410D300B8C295 /* AppDelegate.swift */,
 				F63AC83E271410D300B8C295 /* SceneDelegate.swift */,
 				F63AC840271410D300B8C295 /* ViewController.swift */,
+				F60AFD44278C478E00E91D98 /* ButtonEffect.swift */,
 				F61F9EF02717C8670097A160 /* PaintViewController.swift */,
+				F69EEBF8278C4C880099B02A /* saveSound.mp3 */,
 				F63AC842271410D300B8C295 /* Main.storyboard */,
 				F63AC845271410D400B8C295 /* Assets.xcassets */,
 				F63AC847271410D400B8C295 /* LaunchScreen.storyboard */,
@@ -130,6 +136,7 @@
 				F63AC849271410D400B8C295 /* LaunchScreen.storyboard in Resources */,
 				F63AC846271410D400B8C295 /* Assets.xcassets in Resources */,
 				F63AC844271410D300B8C295 /* Main.storyboard in Resources */,
+				F69EEBF9278C4C880099B02A /* saveSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 			files = (
 				F63AC841271410D300B8C295 /* ViewController.swift in Sources */,
 				F63AC83D271410D300B8C295 /* AppDelegate.swift in Sources */,
+				F60AFD45278C478E00E91D98 /* ButtonEffect.swift in Sources */,
 				F63AC83F271410D300B8C295 /* SceneDelegate.swift in Sources */,
 				F61F9EF12717C8670097A160 /* PaintViewController.swift in Sources */,
 			);

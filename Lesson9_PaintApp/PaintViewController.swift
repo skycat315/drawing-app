@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation // 音声を使用するため
 
 class PaintViewController: UIViewController {
     
@@ -47,6 +48,9 @@ class PaintViewController: UIViewController {
     var currentTouchNumber = 0
     // 画像を保存するための配列を宣言
     var savedImageArray:[UIImage] = []
+    
+    // AVAudioPlayerのインスタンスを宣言
+    var audioPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -302,9 +306,19 @@ class PaintViewController: UIViewController {
         // 何も書かれていない画像は保存しない
         if lastDrawImage == nil {
             return
+        } else {
+            // 保存した場合はサウンドを再生
+            if let soundURL = Bundle.main.url(forResource: "saveSound", withExtension: "mp3") {
+                do {
+                    audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                    audioPlayer?.play()
+                } catch {
+                    print("Sound error")
+                }
+            }
+            // saveボタンを押したら絵をカメラロールに保存する
+            UIImageWriteToSavedPhotosAlbum(self.canvas.image!, self, nil, nil)
         }
-        // saveボタンを押したら絵をカメラロールに保存する
-        UIImageWriteToSavedPhotosAlbum(self.canvas.image!, self, nil, nil)
     }
     
     @IBAction func onClickUndo(_ sender: Any) {
@@ -346,5 +360,6 @@ class PaintViewController: UIViewController {
     @IBAction func homeButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+
 }
 

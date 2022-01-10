@@ -8,7 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // startボタン
     @IBOutlet weak var startButton: UIButton!
+    
+    // 各画像
     @IBOutlet weak var catImage: UIImageView!
     @IBOutlet weak var icecreamImage: UIImageView!
     @IBOutlet weak var swirlImage: UIImageView!
@@ -32,21 +36,22 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor(red: 1, green: 1, blue: 0.7, alpha: 1)
         
         // STARTボタン
-        startButton.backgroundColor = .orange
-        startButton.layer.borderWidth = 2
-        startButton.layer.borderColor = UIColor.white.cgColor
-        startButton.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 22)
+        self.startButton.backgroundColor = .orange
+        self.startButton.layer.borderWidth = 2
+        self.startButton.layer.borderColor = UIColor.white.cgColor
+        self.startButton.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 22)
+        
         // 角を丸くする
-        startButton.layer.cornerRadius = 10
+        self.startButton.layer.cornerRadius = 10
         // ボタンに影をつける
         // 影の大きさ
-        startButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        self.startButton.layer.shadowOffset = CGSize(width: 3, height: 3)
         // 影の薄さ
-        startButton.layer.shadowOpacity = 0.5
+        self.startButton.layer.shadowOpacity = 0.5
         // 影の丸み
-        startButton.layer.shadowRadius = 10
+        self.startButton.layer.shadowRadius = 10
         // 影の色
-        startButton.layer.shadowColor = UIColor.gray.cgColor
+        self.startButton.layer.shadowColor = UIColor.gray.cgColor
         
     }
 }
